@@ -19,6 +19,12 @@
     'common': {
       init: function() {
         // JavaScript to be fired on all pages
+        $(document).on('click', '.menu-icon', function() {
+          $('.sidebar').fadeIn('fast');
+        });
+        $(document).on('click', '.menu-icon.close', function() {
+          $('.sidebar').fadeOut('fast');
+        });
       },
       finalize: function() {
         // JavaScript to be fired on all pages, after page specific JS is fired

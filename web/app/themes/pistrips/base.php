@@ -22,10 +22,12 @@ use Roots\Sage\Wrapper;
       <div class="content row">
         <?php if (Config\display_sidebar()) : ?>
           <aside class="sidebar" role="complementary">
+            <i class="menu-icon close visible-xs glyphicon glyphicon-remove"></i>
             <?php include Wrapper\sidebar_path(); ?>
           </aside><!-- /.sidebar -->
         <?php endif; ?>
         <main class="main" role="main">
+          <i class="menu-icon glyphicon visible-xs glyphicon-menu-hamburger"></i>
           <?php include Wrapper\template_path(); ?>
         </main><!-- /.main -->
       </div><!-- /.content -->
