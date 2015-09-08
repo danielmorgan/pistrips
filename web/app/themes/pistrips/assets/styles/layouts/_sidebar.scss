@@ -5,18 +5,25 @@
     position: fixed;
     z-index: 10;
     display: none;
-    @media (min-width: $screen-sm) { display: block; }
+    @media (min-width: $screen-sm) { display: block !important; }
 
     .branding {
-        margin: 4em 0;
+        margin: 3em 0;
         text-align: center;
+        a.brand:hover { text-decoration: none; }
         h1 {
+            display: inline-block;
+            // font-size: 2em;
             text-transform: uppercase;
-            color: $lighter;
         }
         .tagline {
             font-family: 'Raleway';
             font-size: 1.2em;
         }
+    }
+
+    a {
+        color: $lighter;
+        &:hover { color: lighten(saturate($brand-primary, 50%), 50%); }
     }
 }

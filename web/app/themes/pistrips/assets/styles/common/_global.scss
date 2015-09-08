@@ -1,7 +1,18 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:200,300,500,700,800,900,600,400,100);
+@import url(https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic);
 
-h1, h2, h3, h4, h5, h6 {
+body {
+	font-size: 16px;
+	font-family: 'Lora', Georgia, serif;
+}
+
+h1 {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     text-transform: uppercase;
+}
+
+h2, h3, h4, h5, h6 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
 }

@@ -3,11 +3,14 @@
     top: 0;
     right: 0;
     padding: 1em;
-    font-size: 2em;
     cursor: pointer;
     color: $brand-primary;
-
-    &.close {
+    &::before {
+        font-size: 2em;
+        margin: 0;
+        font-weight: normal;
+    }
+    &.close-menu {
         color: $lighter;
     }
 }
